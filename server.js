@@ -36,14 +36,31 @@ app.put('/api/articles/:name/upVotes', async (req,res) => {
   const { name } = req.params;
   //use MongoDB $inc operator to increment by one the upVotes prop for the specific article
   const article = await db.collection('articles').updateOne({ name }, { $inc: {upVotes: 1}} );
-  //query (READ) data from specific updated article
+  //response with updated data
   if(article){
     res.json(article);
   } else {
     res.send('This article doesn\'t exists')
   }
-})
+});
 
+//CREATE(add) comments to database 
+app.post('/api/articles/:name/comments', async (req, res) => {
+  const { name } = req.params;
+  const { postedBy, text } = req.body;
+
+  await db.collection('articles').updateOne({ name }, {
+    $push: { comments: { postedBy, text }}
+  })
+  const article = await db.collection('articles').findOne({name})
+
+  //response with updated data
+  if(article){
+    res.json(article.comments);
+  } else {
+    res.send('This article doesn\'t exists')
+  }  
+})
 //telling the server to listen on port 8000 and pass a callback to display message to check it is working
 connectToDb(() =>{
   app.listen(8000, () =>{
