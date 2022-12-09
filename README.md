@@ -34,3 +34,4 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 14:55 PM <span style="color:red">Action:</span> WIP: Enable the front-end to make the api requests defined above (up-voting and leaving comments). We are going to use Axios library to handle network requests.
 * 15:15 PM <span style="color:red">Action:</span> WIP: Installed Axios library into front-end directory.
 * 15:53 PM <span style="color:red">Action:</span> WIP: Adding initial components for the front-end. Installed react-router-dom into front-end directory." 
+* 16:43 PM <span style="color:red">Action:</span> WIP: Working on App.js in the front-end directory." 
