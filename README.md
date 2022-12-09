@@ -31,3 +31,4 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 14:15 AM <span style="color:red">Action:</span> Successfully added api endpoint to UPDATE upVotes prop for articles on cloud database. Users are able to up-vote their favorite articles. Refactor server.js to import db connection from db.js to have dryer code.
 * 14:30 AM <span style="color:red">Action:</span> WIP: Working on endpoint to allow the client side to CREATE(add) data for a given article property (comments). This is going to allow users to add comments to an article.
 * 14:50 AM <span style="color:red">Action:</span> Successfully added api endpoint to CREATE(add) comments for articles. Users are able to leave comments for articles.
+* 14:55 AM <span style="color:red">Action:</span> WIP: Enable the front-end to make the api requests defined above (up-voting and leaving comments). We are going to use Axios library to handle network requests.
