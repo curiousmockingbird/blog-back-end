@@ -24,6 +24,7 @@
 #### Thursday, December 8
 * 17:30 PM <span style="color:red">Action:</span> Successfully added .env file to store without exposure password and user name for MongoDB connection.
 #### Friday, December 9
-* 10:45 AM <span style="color:red">Action:</span> WIP: Working on endpoint to allow the client side to load the data for a given article through Express.
+* 10:45 AM <span style="color:red">Action:</span> WIP: Working on endpoint to allow the client side to READ the data for a given article through Express.
 * 12:05 AM <span style="color:red">Action:</span> Successfully created api endpoint to search article by name using an Express app. I was able to access the articles' data through Postman (as I haven't worked on the front-end yet). 
 In the process, I learned that every time I change my location (e.g. working from a café or so) I need to add the IP address of the place where I am connecting to the internet to my MongoDB cluster network settings. Otherwise, I wouldn't be able to access the data from my databases there.
+* 12:35 AM <span style="color:red">Action:</span> WIP: Working on endpoint to allow the client side to UPDATE the data for a given article property (upVotes) using Express. This is going to allow users to up-vote an article they liked.

@@ -20,7 +20,7 @@ app.get('/api/articles/:name/', async (req, res) => {
   await client.connect();
   //reference to the data from the specific database ("blog") within our MongoDB cluster
   const db = client.db('blog')
-  //query data from specific article by name
+  //query (READ) data from specific article by name
   const article = await db.collection('articles').findOne({name})
   //if article was found in the query, send response (as JSON data, to make sure the correct headers are set on the response) to client; else, display error message
   if(article){
