@@ -60,10 +60,20 @@ app.post('/api/articles/:name/comments', async (req, res) => {
   } else {
     res.send('This article doesn\'t exists')
   }  
+});
+
+//READ count of articles in database
+app.get('/api/articles/', async (req, res) => {
+  const count = await db.collection('articles').countDocuments();
+  if(count){
+  res.send(`${count}`);
+  } else {
+    res.send('Error');
+  }
 })
 //telling the server to listen on port 8000 and pass a callback to display message to check it is working
 connectToDb(() =>{
   app.listen(8000, () =>{
-    console.log('Server listening on port 8000')
+    console.log('Server listening on port 8000');
   })
 })
