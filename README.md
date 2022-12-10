@@ -35,3 +35,6 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 15:15 PM <span style="color:red">Action:</span> WIP: Installed Axios library into front-end directory.
 * 15:53 PM <span style="color:red">Action:</span> WIP: Adding initial components for the front-end. Installed react-router-dom into front-end directory." 
 * 16:43 PM <span style="color:red">Action:</span> WIP: Working on App.js in the front-end directory." 
+#### Saturday, December 10
+* 12:00 AM <span style="color:red">Action:</span> Added endpoint that returns number of articles in the database. I was also able to show that number in the web browser, in first site local build." 
+* 12:20 AM <span style="color:red">Action:</span> Added setInterval() within useEffect() to automatically fetch data (number of articles)from database." 
