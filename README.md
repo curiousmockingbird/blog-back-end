@@ -38,3 +38,4 @@ In the process, I learned that every time I change my location (e.g. working fro
 #### Saturday, December 10
 * 12:00 AM <span style="color:red">Action:</span> Added endpoint that returns number of articles in the database. I was also able to show that number in the web browser, in first site local build." 
 * 12:20 AM <span style="color:red">Action:</span> Added setInterval() within useEffect() to automatically fetch data (number of articles)from database." 
+* 14:20 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding components to blog. Working on SignIn and SignUp sections of the LogInHeader." 
