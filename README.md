@@ -40,3 +40,4 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 12:20 AM <span style="color:red">Action:</span> Added setInterval() within useEffect() to automatically fetch data (number of articles)from database." 
 * 14:20 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding components to blog. Working on SignIn and SignUp sections of the LogInHeader." 
 * 14:40 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Installed bootstrap npm package." 
+* 15:30 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Formatting blog's sign-in/sign-up page." 
