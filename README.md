@@ -38,10 +38,11 @@ In the process, I learned that every time I change my location (e.g. working fro
 #### Saturday, December 10
 * 12:00 AM <span style="color:red">Action:</span> Added endpoint that returns number of articles in the database. I was also able to show that number in the web browser, in first site local build." 
 * 12:20 AM <span style="color:red">Action:</span> Added setInterval() within useEffect() to automatically fetch data (number of articles)from database." 
-* 14:20 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding components to blog. Working on SignIn and SignUp sections of the LogInHeader." 
-* 14:40 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Installed bootstrap npm package." 
-* 15:30 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Formatting blog's sign-in/sign-up page." 
-* 13:30 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Working on blogControl and sign-in pages." 
-* 14:20 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding Firebase Auth to project. Creating test user to test log-in, sig-up & sign-out functionalities." 
-* 15:20 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Added .env to root directory to store Firebase configuration keys." 
-* 15:57 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding authorization functionality to sign-in/sign-up component.
+* 14:20 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding components to blog. Working on SignIn and SignUp sections of the LogInHeader." 
+* 14:40 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Installed bootstrap npm package." 
+#### Sunday, December 11
+* 15:30 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Formatting blog's sign-in/sign-up page." 
+* 13:30 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Working on blogControl and sign-in pages." 
+* 14:20 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding Firebase Auth to project. Creating test user to test log-in, sig-up & sign-out functionalities." 
+* 15:20 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Added .env to root directory to store Firebase configuration keys." 
+* 15:57 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding authorization functionality to sign-in/sign-up component.
