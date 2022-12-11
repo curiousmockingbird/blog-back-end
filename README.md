@@ -44,3 +44,4 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 13:30 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Working on blogControl and sign-in pages." 
 * 14:20 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding Firebase Auth to project. Creating test user to test log-in, sig-up & sign-out functionalities." 
 * 15:20 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Added .env to root directory to store Firebase configuration keys." 
+* 15:57 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding authorization functionality to sign-in/sign-up component.
