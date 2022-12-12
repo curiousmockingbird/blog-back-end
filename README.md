@@ -46,3 +46,5 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 14:20 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding Firebase Auth to project. Creating test user to test log-in, sig-up & sign-out functionalities." 
 * 15:20 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Added .env to root directory to store Firebase configuration keys." 
 * 15:57 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> WIP: Adding authorization functionality to sign-in/sign-up component.
+
+[Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
