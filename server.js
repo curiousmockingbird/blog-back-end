@@ -71,7 +71,17 @@ app.get('/api/articles/', async (req, res) => {
   } else {
     res.send('Error');
   }
-})
+});
+
+//READ all articles from database
+app.get('/api/articles-list/', async (req, res) => {
+  const articles = await db.collection('articles').find().toArray();
+  if(articles){
+  res.json(articles);
+  } else {
+    res.send('Error');
+  }
+});
 //telling the server to listen on port 8000 and pass a callback to display message to check it is working
 connectToDb(() =>{
   app.listen(8000, () =>{
