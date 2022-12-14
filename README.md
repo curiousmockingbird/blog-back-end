@@ -51,5 +51,6 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 18:57 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Finished adding Firebase Auth to sign-in/sign-up & sign-out. Added userEmail props from BlogControl into Welcome.js.
 #### Tuesday, December 13 
 * 10:57 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Install sass npm package in front-end directory.
+* 19:27 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Add @mixins to handle media queries with sass.
 
 [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)

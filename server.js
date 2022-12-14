@@ -4,7 +4,8 @@ import express from 'express';
 import { MongoClient } from 'mongodb';
 //import dotenv in order to use environmental variables
 import {} from 'dotenv/config';
-import { db, connectToDb} from './db.js'
+import { db, connectToDb } from './db.js';
+
 //creating an express app 
 const app = express();
 //express.json() is a built in middleware function in Express. It parses incoming JSON requests and puts the parsed data in req.body.
