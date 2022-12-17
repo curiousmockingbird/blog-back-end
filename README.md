@@ -62,6 +62,8 @@ In the process, I learned that every time I change my location (e.g. working fro
 
 #### Wednesday, December 14 
 * 12:35 AM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Added api endpoint to READ all the articles from database.
+#### Friday, December 16 
+* 12:35 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Add breakpoint to bootstrap columns to make article rows at md size.
 
 
 [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)

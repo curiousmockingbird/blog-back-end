@@ -75,7 +75,7 @@ app.get('/api/articles/', async (req, res) => {
 
 //READ all articles from database
 app.get('/api/articles-list/', async (req, res) => {
-  const articles = await db.collection('articles').find().toArray();
+  const articles = await db.collection('articles').find({}).toArray();
   if(articles){
   res.json(articles);
   } else {
