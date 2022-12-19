@@ -67,6 +67,7 @@ In the process, I learned that every time I change my location (e.g. working fro
 #### Sunday, December 18 
 * 16:35 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Add Bootstrap card style to ArticlesList component.
 * 22:15 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Add concurrently npm package to make easier serving back-end and starting react front end.
+* 22:35 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Add Twitter npm package.
 
 
 [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
