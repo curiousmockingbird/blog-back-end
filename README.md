@@ -61,9 +61,11 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 19:27 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Add @mixins to handle media queries with sass.
 
 #### Wednesday, December 14 
-* 12:35 AM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Added api endpoint to READ all the articles from database.
+* 12:35 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Added api endpoint to READ all the articles from database.
 #### Friday, December 16 
-* 12:35 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Add breakpoint to bootstrap columns to make article rows at md size.
+* 12:35 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Add breakpoint to bootstrap columns to make article rows at md size.
+#### Sunday, December 18 
+* 16:35 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Add Bootstrap card style to ArticlesList component.
 
 
 [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
