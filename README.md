@@ -69,6 +69,8 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 22:15 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Add concurrently npm package to make easier serving back-end and starting react front end.
 * 22:35 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Add Twitter npm package.
 * 22:40 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> WIP: Accessing Twitter trends api endpoints through custom express app.
+#### Tuesday, December 20
+* 10:15 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Refactor Express app URL route for up-voting. Successfully implemented up-voting functionality in front-end.
 
 
 [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)

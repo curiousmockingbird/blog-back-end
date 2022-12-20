@@ -5,9 +5,19 @@ import { MongoClient } from 'mongodb';
 //import dotenv in order to use environmental variables
 import {} from 'dotenv/config';
 import { db, connectToDb } from './db.js';
+import Twitter from 'twitter';
+
+//create a new instance of the Twitter client
+const client = new Twitter({
+  consumer_key: process.env.TWITTER_CONSUMER_KEY,
+  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+});
 
 //creating an express app 
 const app = express();
+const router = express.Router();
 //express.json() is a built in middleware function in Express. It parses incoming JSON requests and puts the parsed data in req.body.
 app.use(express.json());
 
@@ -36,7 +46,9 @@ app.get('/api/articles/:name/', async (req, res) => {
 app.put('/api/articles/:name/upVotes', async (req,res) => {
   const { name } = req.params;
   //use MongoDB $inc operator to increment by one the upVotes prop for the specific article
-  const article = await db.collection('articles').updateOne({ name }, { $inc: {upVotes: 1}} );
+  await db.collection('articles').updateOne({ name }, { $inc: {upVotes: 1}} );
+  //query (READ) data from specific article by name
+  const article = await db.collection('articles').findOne({name});
   //response with updated data
   if(article){
     res.json(article);
@@ -82,6 +94,31 @@ app.get('/api/articles-list/', async (req, res) => {
     res.send('Error');
   }
 });
+
+//Get trending topics from Twitter API
+router.get('/api/trends', async (req, res) => {
+
+  const trends = await client.get('https://api.twitter.com/1.1/trends/place.json', {
+    id: 1,
+  });
+  if (trends) {
+    res.json(trends);
+  } else {
+    res.send('Error');
+  }
+});
+
+
+
+// router.get('api/trends', async (req, res) => {
+//   // const id = req.query.woeid;
+//   const trends = await client.get('trends/place.json', {
+//     id: 1,
+//   });
+//   res.send(trends);
+// });
+
+
 //telling the server to listen on port 8000 and pass a callback to display message to check it is working
 connectToDb(() =>{
   app.listen(8000, () =>{
