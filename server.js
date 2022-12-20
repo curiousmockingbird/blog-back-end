@@ -69,7 +69,7 @@ app.post('/api/articles/:name/comments', async (req, res) => {
 
   //response with updated data
   if(article){
-    res.json(article.comments);
+    res.json(article);
   } else {
     res.send('This article doesn\'t exists')
   }  
@@ -96,17 +96,17 @@ app.get('/api/articles-list/', async (req, res) => {
 });
 
 //Get trending topics from Twitter API
-router.get('/api/trends', async (req, res) => {
+// router.get('/api/trends', async (req, res) => {
 
-  const trends = await client.get('https://api.twitter.com/1.1/trends/place.json', {
-    id: 1,
-  });
-  if (trends) {
-    res.json(trends);
-  } else {
-    res.send('Error');
-  }
-});
+//   const trends = await client.get('https://api.twitter.com/1.1/trends/place.json', {
+//     id: 1,
+//   });
+//   if (trends) {
+//     res.json(trends);
+//   } else {
+//     res.send('Error');
+//   }
+// });
 
 
 

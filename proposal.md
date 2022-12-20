@@ -3,7 +3,7 @@
 #### Project's Purpose or Goal: 
 * _A blog about Cuba, its most relevant recent events, its culture, and traveler's tips._
 #### Absolute minimum features the project requires to meet this purpose or goal:
-* User accounts granting access to a list of articles once logged in._
+* User accounts granting access to a list of articles once logged in.
 * Articles will have a comments section, and up-vote functionality. Users won't be able to add multiple up-votes, neither adding comments without being logged in as well.
 * The blog will have a "Most voted articles" section, showing the most popular articles in descending order.
 * Each article will be related to a tag (e.g. #Havana, #music, #history, etc). The blog will have a section to look for articles by any specific tag.
