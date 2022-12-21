@@ -150,9 +150,10 @@ app.post('/api/articles/:name/comments', async (req, res) => {
   const { name } = req.params;
   const { text } = req.body;
   const { email } = req.user;
+  const { date } = req.body;
 
   await db.collection('articles').updateOne({ name }, {
-    $push: { comments: { postedBy: email, text }}
+    $push: { comments: { postedBy: email, text, date } }
   })
   const article = await db.collection('articles').findOne({name})
 
