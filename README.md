@@ -80,6 +80,9 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 22:30 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> WIP: Refactoring previously defined Express rout handlers to incorporate Auth functionality.
 * 23:00 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Successfully added route protection to server. WIP: Adding Auth tokens to request headers in front-end.
 
+#### Wednesday, December 21
+* 11:55 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Successfully added Auth tokens to request headers in front-end.
+
 
 
 [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
