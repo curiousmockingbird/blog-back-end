@@ -74,6 +74,7 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 17:35 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Successfully added comments functionality to front-end.
 * 18:35 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Successfully added endpoint to load 9 articles from collection at a time starting from the 10th article in ArticlesList component, and keep that pattern.
 * 21:30 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> WIP: Adding Firebase Auth to allow server verify users off tokens. Generating Firebase key to connect from auth to server.
+* 21:40 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> WIP: Installing the back-end equivalent of the Firebase npm package used in the front-end.
 
 
 [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
