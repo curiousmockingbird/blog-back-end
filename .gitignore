@@ -25,3 +25,5 @@ yarn-error.log*
 articles-content.js
 
 articles-content.js
+
+firebaseCredentials.json
