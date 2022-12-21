@@ -1,11 +1,14 @@
+//import firebase admin to connect to Firebase admin SDK
+import fs from 'fs';
+import admin from 'firebase-admin';
 //Express server here:
-
 import express from 'express';
+//import MongoClient from mongodb to connect to MongoDB
 import { MongoClient } from 'mongodb';
 //import dotenv in order to use environmental variables
 import {} from 'dotenv/config';
 import { db, connectToDb } from './db.js';
-import Twitter from 'twitter';
+// import Twitter from 'twitter';
 
 //create a new instance of the Twitter client
 // const client = new Twitter({
@@ -14,6 +17,12 @@ import Twitter from 'twitter';
 //   access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
 //   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 // });
+
+// Setting firebase admin package before initializing express app
+const credentials = JSON.parse(fs.readFileSync('./firebaseCredentials.json'));
+admin.initializeApp({
+  credential: admin.credential.cert(credentials),
+});
 
 //creating an express app 
 const app = express();
