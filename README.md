@@ -72,6 +72,7 @@ In the process, I learned that every time I change my location (e.g. working fro
 #### Tuesday, December 20
 * 10:15 AM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Refactor Express app URL route for up-voting. Successfully implemented up-voting functionality in front-end.
 * 17:35 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Successfully added comments functionality to front-end.
+* 18:35 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Successfully added endpoint to load 9 articles from collection at a time starting from the 10th article in ArticlesList component, and keep that pattern.
 
 
 [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
