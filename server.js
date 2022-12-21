@@ -8,6 +8,7 @@ import { MongoClient } from 'mongodb';
 //import dotenv in order to use environmental variables
 import {} from 'dotenv/config';
 import { db, connectToDb } from './db.js';
+import { send } from 'process';
 // import Twitter from 'twitter';
 
 //create a new instance of the Twitter client
@@ -28,6 +29,22 @@ admin.initializeApp({
 const app = express();
 //express.json() is a built in middleware function in Express. It parses incoming JSON requests and puts the parsed data in req.body.
 app.use(express.json());
+
+//This function loads automatically the user's credentials into req.user
+app.use(async (req, res, next) => {
+//set headers to allow requests from client
+  const { authToken } = req.headers;
+  if(authToken){
+    try {
+      //verify the token sent from the client, and loads the user's credentials into req.user
+        const user = await admin.auth().verifyIdToken(authToken);
+        req.user = user;
+    } catch (error) {
+      res.sendStatus(400);
+    }
+  }
+  next();
+})
 
 //READ article data from server
 app.get('/api/articles/:name/', async (req, res) => {

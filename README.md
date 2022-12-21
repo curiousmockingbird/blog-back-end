@@ -76,7 +76,9 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 21:30 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> WIP: Adding Firebase Auth to allow server verify users off tokens. Generating Firebase key to connect from auth to server.
 * 21:40 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> WIP: Installing Firebase admin npm package. This is the back-end equivalent of the Firebase npm package used in the front-end.
 * 21:55 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Successfully add Firebase admin npm to server and credentials to verify users and their request to the server.
-* 22:05 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> WIP: Adding Auth to endpoints to check wether the user who makes a request is logged in or not.
+* 22:05 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> WIP: Adding Authentication to endpoints to check wether the user who makes a request is logged in or not. Users will need to use an Auth token to make a request to the server. Auth tokens are a way the front end proves to the back end that the user is logged in and that they are who they say they are. We use the Auth token that's going to be included in every request coming from our front end, in order to load information about that user (user id, email, etc,) from firebase.
+* 21:30 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> WIP: Refactoring previously defined Express rout handlers to incorporate Auth functionality.
+
 
 
 [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
