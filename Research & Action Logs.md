@@ -83,6 +83,7 @@ In the process, I learned that every time I change my location (e.g. working fro
 #### Wednesday, December 21
 * 11:55 AM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Successfully added Auth tokens to request headers in front-end.
 * 13:55 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Refactor articles/comments endpoint to include a date property. Successfully added date property to articles/comments in database from front-end.
+* 21:00 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Remove mongodbConnection.js from commit history.
 
 
 
