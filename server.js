@@ -101,6 +101,24 @@ app.get('/api/articles-list/:count', async (req, res) => {
   }
 });
 
+
+//Aggregation pipeline to READ articles from database by most upVotes
+app.get('/api/popularity/', async (req, res) => {
+  const articles = await db.collection('articles').aggregate([
+    {
+      '$sort': {
+        'upVotes': -1
+      }
+    }
+  ]).toArray();
+  
+  if(articles){
+  res.json(articles);
+  } else {
+    res.send('Error');
+  }
+});
+
 //Adding middleware that will only apply to these two routes. If the user is not logged in, it will send a 401 status code to the client
 app.use((req, res, next) => {
   if(req.user){

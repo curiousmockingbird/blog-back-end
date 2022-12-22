@@ -85,5 +85,9 @@ In the process, I learned that every time I change my location (e.g. working fro
 * 13:55 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Refactor articles/comments endpoint to include a date property. Successfully added date property to articles/comments in database from front-end.
 * 21:00 PM <span style="color:red">Action:</span> <span style="color:blue">(Back-end)</span> Remove mongodbConnection.js from commit history.
 
+#### Thursday, December 22
+* 13:40 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span>Added functionality to display articles in order of popularity. Refactor server.js to include a new endpoint to get articles by popularity.
+
+
 
 
