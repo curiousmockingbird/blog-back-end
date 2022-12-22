@@ -1,5 +1,5 @@
 
-#[Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
+# [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
 
 #### Name of student: Harold Mesa
 #### Name of project: The Cuban Blog
