@@ -27,3 +27,4 @@ articles-content.js
 articles-content.js
 
 firebaseCredentials.json
+mongodbConnection.js
