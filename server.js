@@ -1,3 +1,11 @@
+
+//This require from google-cloud/debug-agent is to enable Canary testing
+require('@google-cloud/debug-agent').start({
+  serviceContext: {
+    enableCanary: true,
+  },
+});
+
 //import firebase admin to connect to Firebase admin SDK
 import fs from 'fs';
 import admin from 'firebase-admin';
@@ -34,7 +42,7 @@ app.use(express.static(path.join(__dirname, './build')));
 
 //Adding route handler for when a request doesn't match any of the routes
 app.get(/^(?!\/api).+/, (req, res) => {
-  res.sendFile(path.join(__dirname, './build/index.html'));
+  res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
 //Adding middleware to these routes to check if the user is logged in
