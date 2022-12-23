@@ -88,7 +88,7 @@ In the process, I learned that every time I change my location (e.g. working fro
 #### Thursday, December 22
 * 13:40 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span>Added functionality to display articles in order of popularity. Refactor server.js to include a new endpoint to get articles by popularity.
 #### Friday, December 23
-* 14:30 PM <span style="color:red">Action:</span> <span style="color:green">Deployment commit</span>14:40 Add searchByTag functionality. Site ready for deployment
-* 15:00 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span> Add app.yaml and prod-env.yaml files. These files are used by Google App Engine to deploy the app and is required for deployment. Here we store the configuration for the app, such as the runtime environment, the entry point, and the environment variables (MongoDB username and password) to be use by Google App Engine.
+* 14:30 PM <span style="color:red">Action:</span> <span style="color:purple">(Back and front-end)</span>14:40 Add searchByTag functionality.
+* 15:00 PM <span style="color:red">Action:</span> <span style="color:green">(Prod-commit)</span> Add app.yaml and prod-env.yaml files. These files are used by Google App Engine to deploy the app and is required for deployment. Here we store the configuration for the app, such as the runtime environment, the entry point, and the environment variables (MongoDB username and password) to be use by Google App Engine. Also, added the start script to package.json to run the app in production mode. App ready to be deployed to Google App Engine.
 
 

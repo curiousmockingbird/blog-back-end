@@ -64,7 +64,7 @@ app.get('/api/articles/:name', async (req, res) => {
   const { uid } = req.user;
 
   //connect to MongoDB and make a query
-  const uri = `mongodb+srv://${process.env.MONGO_URI}@cluster0.c9syyx6.mongodb.net/?retryWrites=true&w=majority`;
+  const uri = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@cluster0.c9syyx6.mongodb.net/?retryWrites=true&w=majority`;
   const client = new MongoClient(uri);
   //connect to client, so we need the async keyword at t he top level of function to deal with async code
   await client.connect();
