@@ -1,6 +1,7 @@
 //import firebase admin to connect to Firebase admin SDK
 import fs from 'fs';
 import admin from 'firebase-admin';
+import path from 'path';
 //Express server here:
 import express from 'express';
 //import MongoClient from mongodb to connect to MongoDB
@@ -10,16 +11,31 @@ import {} from 'dotenv/config';
 import { db, connectToDb } from './db.js';
 
 
+
 // Setting firebase admin package before initializing express app
 const credentials = JSON.parse(fs.readFileSync('./firebaseCredentials.json'));
 admin.initializeApp({
   credential: admin.credential.cert(credentials),
 });
 
+//import path to use path.join() to create a path to the build folder
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
 //creating an express app 
 const app = express();
 //express.json() is a built in middleware function in Express. It parses incoming JSON requests and puts the parsed data in req.body.
 app.use(express.json());
+
+//Tell express to use the static files in the build folder
+app.use(express.static(path.join(__dirname, './build')));
+
+//Adding route handler for when a request doesn't match any of the routes
+app.get(/^(?!\/api).+/, (req, res) => {
+  res.sendFile(path.join(__dirname, './build/index.html'));
+});
 
 //Adding middleware to these routes to check if the user is logged in
 app.use(async (req, res, next) => {
