@@ -119,6 +119,26 @@ app.get('/api/popularity/', async (req, res) => {
   }
 });
 
+//Aggregation pipeline to READ articles from database by tag name
+app.get('/api/:tag/', async (req, res) => {
+  const { tag } = req.params;
+  const articles = await db.collection('articles').aggregate([
+    {
+      '$match': {
+        'tags': tag
+      }
+    }
+  ]).toArray();
+
+  if(articles){
+  res.json(articles);
+  } else {
+    res.send('Error');
+  }
+});
+
+
+
 //Adding middleware that will only apply to these two routes. If the user is not logged in, it will send a 401 status code to the client
 app.use((req, res, next) => {
   if(req.user){

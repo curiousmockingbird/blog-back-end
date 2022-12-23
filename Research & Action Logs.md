@@ -87,7 +87,7 @@ In the process, I learned that every time I change my location (e.g. working fro
 
 #### Thursday, December 22
 * 13:40 PM <span style="color:red">Action:</span> <span style="color:blue">(Front-end)</span>Added functionality to display articles in order of popularity. Refactor server.js to include a new endpoint to get articles by popularity.
-
-
+#### Friday, December 23
+* <span style="color:red">Action:</span> <span style="color:green">Deployment commit</span>14:40 Add searchByTag functionality. Site ready for deployment
 
 
