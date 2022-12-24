@@ -1,10 +1,9 @@
 
 //This require from google-cloud/debug-agent is to enable Canary testing
-require('@google-cloud/debug-agent').start({
-  serviceContext: {
-    enableCanary: true,
-  },
-});
+
+// import google cloud debugger agent with import syntax
+import '@google-cloud/debug-agent';
+
 
 //import firebase admin to connect to Firebase admin SDK
 import fs from 'fs';
@@ -18,19 +17,16 @@ import { MongoClient } from 'mongodb';
 import {} from 'dotenv/config';
 import { db, connectToDb } from './db.js';
 
-
+//import path to use path.join() to create a path to the build folder
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Setting firebase admin package before initializing express app
 const credentials = JSON.parse(fs.readFileSync('./firebaseCredentials.json'));
 admin.initializeApp({
   credential: admin.credential.cert(credentials),
 });
-
-//import path to use path.join() to create a path to the build folder
-import { fileURLToPath } from 'url';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 
 //creating an express app 
 const app = express();
@@ -42,7 +38,7 @@ app.use(express.static(path.join(__dirname, './build')));
 
 //Adding route handler for when a request doesn't match any of the routes
 app.get(/^(?!\/api).+/, (req, res) => {
-  res.sendFile(path.join(__dirname, '../build/index.html'));
+  res.sendFile(path.join(__dirname, './build/index.html'));
 });
 
 //Adding middleware to these routes to check if the user is logged in
