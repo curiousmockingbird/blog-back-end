@@ -1,10 +1,4 @@
 
-//This require from google-cloud/debug-agent is to enable Canary testing
-
-// import google cloud debugger agent with import syntax
-import '@google-cloud/debug-agent';
-
-
 //import firebase admin to connect to Firebase admin SDK
 import fs from 'fs';
 import admin from 'firebase-admin';
