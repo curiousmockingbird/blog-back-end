@@ -28,11 +28,11 @@ const app = express();
 app.use(express.json());
 
 //Tell express to use the static files in the build folder
-app.use(express.static(path.join(__dirname, './build')));
+app.use(express.static(path.join(__dirname, '../build')));
 
 //Adding route handler for when a request doesn't match any of the routes
 app.get(/^(?!\/api).+/, (req, res) => {
-  res.sendFile(path.join(__dirname, './build/index.html'));
+  res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
 //Adding middleware to these routes to check if the user is logged in
