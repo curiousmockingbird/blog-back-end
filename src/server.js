@@ -1,14 +1,13 @@
 
 //import firebase admin to connect to Firebase admin SDK
 import fs from 'fs';
-import admin from 'firebase-admin';
 import path from 'path';
+import admin from 'firebase-admin';
 //Express server here:
 import express from 'express';
 //import MongoClient from mongodb to connect to MongoDB
-import { MongoClient } from 'mongodb';
 //import dotenv in order to use environmental variables
-import {} from 'dotenv/config';
+import 'dotenv/config';
 import { db, connectToDb } from './db.js';
 
 //import path to use path.join() to create a path to the build folder
@@ -60,15 +59,7 @@ app.get('/api/articles/:name', async (req, res) => {
   //get the value of :name and use it to req (query) to MongoDB
   const { name } = req.params;
   const { uid } = req.user;
-
-  //connect to MongoDB and make a query
-  const uri = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@cluster0.c9syyx6.mongodb.net/?retryWrites=true&w=majority`;
-  const client = new MongoClient(uri);
-  //connect to client, so we need the async keyword at t he top level of function to deal with async code
-  await client.connect();
-  //reference to the data from the specific database ("blog") within our MongoDB cluster
-  const db = client.db('blog');
-  //query (READ) data from specific article by name
+  //find the article in the database that matches the name in the URL
   const article = await db.collection('articles').findOne({name});
   //if article was found in the query, send response (as JSON data, to make sure the correct headers are set on the response) to client; else, display error message
   if(article){
