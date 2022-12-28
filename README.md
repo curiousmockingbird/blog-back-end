@@ -1,5 +1,7 @@
 
-# [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
+# [Link to deployed site](https://cuban-blog.uw.r.appspot.com/)
+
+### [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
 
 #### Name of student: Harold Mesa
 #### Name of project: The Cuban Blog
