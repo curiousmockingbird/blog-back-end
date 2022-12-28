@@ -1,5 +1,5 @@
 
-### [Link to deployed site](https://cuban-blog.uw.r.appspot.com/)
+### [Link to deployed site](https://the-cuban-blog.uc.r.appspot.com/)
 
 <img src="img/the-cuban-blog.png" alt="Cuban Blog" width="500" />
 
