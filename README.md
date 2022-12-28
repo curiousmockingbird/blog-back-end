@@ -1,5 +1,8 @@
 
-# [Link to deployed site](https://cuban-blog.uw.r.appspot.com/)
+### [Link to deployed site](https://cuban-blog.uw.r.appspot.com/)
+
+<img src="img/the-cuban-blog.png" alt="Cuban Blog" width="500" />
+
 
 ### [Link to front-end repository](https://github.com/curiousmockingbird/blog-front-end.git)
 
