@@ -203,10 +203,11 @@ app.post('/api/articles/:name/comments', async (req, res) => {
   }  
 });
 
+const PORT = process.env.PORT || 8000;
 
 //telling the server to listen on port 8000 and pass a callback to display message to check it is working
 connectToDb(() =>{
-  app.listen(8000, () =>{
+  app.listen(PORT, () =>{
     console.log('Server listening on port 8000');
   })
 })
